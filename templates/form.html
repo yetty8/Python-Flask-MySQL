@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <h1>Contact Information</h1>
+    <form action="/form" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="text" name="country" placeholder="Country" required>
+        <input type="text" name="state" placeholder="State" required>
+        <input type="text" name="zip_code" placeholder="Zip_code" required>
+        <input type="text" name="occupation" placeholder="Occupation" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
