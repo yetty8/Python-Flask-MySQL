@@ -4,8 +4,8 @@ import os
 def get_db_connection():
     connection = mysql.connector.connect(
         host=os.environ.get('MYSQL_HOST', 'localhost'),
-        user=os.environ.get('MYSQL_USER', 'Yetty'),  
-        password=os.environ.get('MYSQL_PASSWORD', 'Yetty123'),  
+        user=os.environ.get('MYSQL_USER', ''),  
+        password=os.environ.get('MYSQL_PASSWORD', ''),  
         database=os.environ.get('MYSQL_DB', 'my_flask_app')
     )
     return connection
